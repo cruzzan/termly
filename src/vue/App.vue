@@ -10,6 +10,7 @@ export default {
   // Properties returned from data() become reactive state
   // and will be exposed on `this`.
   data() {
+    return {}
   },
 
   // Methods are functions that mutate state and trigger updates.

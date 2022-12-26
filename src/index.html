@@ -7,12 +7,30 @@
 </head>
 <body class="vh-100 d-flex flex-column">
 <header>
-    <nav class="container-fluid navbar justify-content-center bg-dark">
+    <nav class="container-fluid navbar justify-content-evenly bg-dark">
+        <div></div>
         <a class="navbar-brand" href="#"><h2 class="display-2 text-white-50">Termly</h2></a>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#helpModal">?</button>
     </nav>
 </header>
 <main class="flex-grow-1 bg-gray">
     <div id="app"></div>
+    <div id="helpModal" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Some instructions</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
     <nav class="navbar sticky-bottom bg-dark">
