@@ -1,1 +1,23 @@
 @import "bootstrap";
+
+.bg-gray {
+  background-color: $gray-800;
+}
+
+.letter {
+  display: flex;
+  height: 4rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter {
+  @extend .border;
+  @extend .border-light;
+  @extend .rounded;
+
+  margin-right: 1rem;
+
+  text-transform: uppercase;
+}

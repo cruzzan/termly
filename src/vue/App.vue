@@ -1,5 +1,12 @@
 <script>
+import PlayingBoard from './PlayingBoard.vue';
+import InputBoard from "./InputBoard.vue";
+
 export default {
+  components: {
+    PlayingBoard,
+    InputBoard
+  },
   // Properties returned from data() become reactive state
   // and will be exposed on `this`.
   data() {
@@ -27,6 +34,8 @@ export default {
 
 <template>
   <div class="container">
+    <PlayingBoard></PlayingBoard>
+    <InputBoard></InputBoard>
     <button class="btn btn-primary btn-lg" @click="increment">Count is: {{ count }}</button>
   </div>
 </template>

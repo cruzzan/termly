@@ -1,12 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="vh-100">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <title>Termly, almost as fun as the original</title>
 </head>
-<body>
-<div id="app"></div>
+<body class="vh-100 d-flex flex-column">
+<header>
+    <nav class="container-fluid navbar justify-content-center bg-dark">
+        <a class="navbar-brand" href="#"><h2 class="display-2 text-white-50">Termly</h2></a>
+    </nav>
+</header>
+<main class="flex-grow-1 bg-gray">
+    <div id="app"></div>
+</main>
+<footer>
+    <nav class="navbar sticky-bottom bg-dark">
+        <div class="container-fluid justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="https://github.com/cruzzan/termly" class="text-decoration-underline text-white-50" target="_blank">This repo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
 <script type="module" src="./js/main.js"></script>
 </body>
 </html>
